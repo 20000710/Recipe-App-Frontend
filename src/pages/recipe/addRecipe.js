@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import FormAddRecipe from '../../form/formAddRecipe'
-import NavbarMenu from '../../navbar/navbarMenu'
+import FormAddRecipe from '../../components/form/formAddRecipe'
+import NavbarMenu from '../../components/navbar/navbarMenu'
 import './addRecipe.css'
 
 const AddRecipe = () => {

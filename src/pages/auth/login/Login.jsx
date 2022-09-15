@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Bg from "../../../asset/img/Mask Group.svg";
+import Masak from "../../../asset/img/wajan.svg";
 import "./login.css";
 
 const Login = () => {
@@ -8,7 +11,7 @@ const Login = () => {
         <div className="row h">
           <div className="col-lg-6 a img-bg d-flex justify-content-center align-items-center">
             <div className="icon-mama">
-              <img src="./asset/img/wajan.svg" className="img-fluid" alt="" />
+              <img src={Masak} className="img-fluid" alt="" />
             </div>
           </div>
           {/* form input  */}
@@ -42,19 +45,26 @@ const Login = () => {
                   />
                 </div>
                 <div className="my-3">
-                  <input type="checkbox" />
-                  <span>I agree to terms & condition</span>
+                  <input type="checkbox" id="check" className="ml-3" />
+                  <label for="check" className="check">
+                    I agree to terms & condition
+                  </label>
                 </div>
-                <button className="btn btn-warning width-btn">Log in</button>
+                <button className="btn btn-warning width-btn text-light">
+                  Log in
+                </button>
               </form>
               <div className="forgot-psw my-3 d-flex justify-content-end">
                 <p>
-                  Forgot <a href="#">password?</a>
+                  <Link to="/forgotpassword">Forgot Password?</Link>
                 </p>
               </div>
               <div className="sign-up d-flex justify-content-center">
                 <p>
-                  Don't have an account? <a href="#">Sign Up</a>
+                  Don't have an account?{" "}
+                  <Link to="/signup" className="signup">
+                    Sign Up
+                  </Link>
                 </p>
               </div>
             </section>

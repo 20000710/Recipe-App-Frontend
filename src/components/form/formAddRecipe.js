@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'antd/dist/antd.min.css';
 import Icon from "@ant-design/icons";
-import { ReactComponent as uploadIcon } from '../../assets/img/upload.svg'
+import { ReactComponent as uploadIcon } from '../../asset/img/upload.svg'
 import {
     Form,
     Input,
