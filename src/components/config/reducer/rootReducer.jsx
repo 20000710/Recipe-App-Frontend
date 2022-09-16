@@ -1,4 +1,4 @@
-import { combineReducer } from "@reduxjs/toolkit";
+import { combineReducers } from "@reduxjs/toolkit";
 
 const rootReducer = combineReducer({});
 
