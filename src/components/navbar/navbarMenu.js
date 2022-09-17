@@ -1,22 +1,24 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
+import { Link } from 'react-router-dom'
 import './navbarMenu.css'
 
-const NavbarMenu = () => {
+const NavbarMenu = ({ menu1, menu2, menu3 }) => {
+
   return (
     <Navbar>
     <Container>
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-start">
         <Navbar.Text>
-          <a href="/home">Home</a>
+          <Link to="/home">{menu1}</Link>
         </Navbar.Text>
         <Navbar.Text>
-          <a href="/add-recipe">Add Recipe</a>
+          <Link to="/add-recipe">{menu2}</Link>
         </Navbar.Text>
         <Navbar.Text>
-          <a href="/profile">Profile</a>
+          <Link to="/profile">{menu3}</Link>
         </Navbar.Text>
       </Navbar.Collapse>
     </Container>
