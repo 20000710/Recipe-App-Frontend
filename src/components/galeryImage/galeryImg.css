@@ -1,0 +1,16 @@
+div.ant-image{
+    margin-right: 2rem;
+}
+
+.caption-img{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 52rem;
+}
+
+.caption-img h2{
+    width: 200px;
+    padding-left: 2.5rem;
+    color: #fff;
+}

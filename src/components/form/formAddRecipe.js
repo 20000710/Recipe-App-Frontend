@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import 'antd/dist/antd.min.css';
+import './formAddRecipe.css'
 import Icon from "@ant-design/icons";
 import { ReactComponent as uploadIcon } from '../../asset/img/upload.svg'
 import {
@@ -18,14 +19,11 @@ const FormAddRecipe = () => {
     };
 
     return (
-        <div className='container'>
+        // <div className='container'>
             <Form
-                labelCol={{
-                    span: 4,
-                }}
-                wrapperCol={{
-                    span: 14,
-                }}
+                // wrapperCol={{
+                //     span: 14,
+                // }}
                 layout="horizontal"
                 onValuesChange={onFormLayoutChange}
                 disabled={componentDisabled}
@@ -56,7 +54,7 @@ const FormAddRecipe = () => {
                     <Button type="primary" htmlType="submit">Post</Button>
                 </Form.Item>
             </Form>
-        </div>
+        // </div>
     )
 }
 

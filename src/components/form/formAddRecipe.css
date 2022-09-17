@@ -1,5 +1,11 @@
-.ant-form .ant-form-item{
-    width: fit-content;
+.ant-form{
+    margin-top: 9.25rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,4 +63,8 @@ span.anticon svg path{
     height: 44px;
     background: #EFC81A;
     border-radius: 6px;
+}
+
+.ant-form .ant-btn span{
+    color: #fff;
 }
