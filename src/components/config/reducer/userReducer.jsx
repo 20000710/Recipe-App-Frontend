@@ -19,6 +19,11 @@ export const usersReducers = (state = initialState, action) => {
       ...state,
       data: action.payload,
     };
+  } else if (action.type === "LOGIN_SUCCESS") {
+    return {
+      ...state,
+      data: action.payload,
+    };
   } else {
     return state;
   }
