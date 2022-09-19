@@ -59,6 +59,10 @@ a {
   color: #efc81a !important;
 }
 
+.wb {
+  font-weight: bold !important;
+}
+
 @media screen and (max-width: 600px) {
   .form-input {
     width: 88%;
