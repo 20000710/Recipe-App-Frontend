@@ -16,6 +16,22 @@ const Router = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route
+          path="/detail-recipe/:id"
+          element={
+            <Auth>
+              <DetailReceipe />
+            </Auth>
+          }
+        />
+        <Route
+          path="/video-page"
+          element={
+            <Auth>
+              <VideoPage />
+            </Auth>
+          }
+        />
+        <Route
           path="/add-recipe"
           element={
             <Auth>

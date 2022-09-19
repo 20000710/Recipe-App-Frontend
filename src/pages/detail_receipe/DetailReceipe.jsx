@@ -1,13 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./detailReceipe.css";
 import resep from "../../asset/img/resep.svg";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import FooterRecipe from "../../components/footer/footerRecipe";
 import saved from "../../asset/img/saved.svg";
 import like from "../../asset/img/like.svg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { getDetailRecipe } from "../../components/config/actions/recipeAction";
+import { useDispatch, useSelector } from "react-redux";
 
 const DetailReceipe = () => {
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  const { recipeDetail } = useSelector((state) => state.recipe);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    dispatch(getDetailRecipe(id));
+  }, []);
+
+  // const ingredients = recipeDetail.ingredients;
+  // const ingredientsList = ingredients.split(",");
+  // console.log(ingredientsList);
+
   return (
     <Fragment>
       <div className="container">
@@ -15,7 +29,7 @@ const DetailReceipe = () => {
         <section>
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 col-md-8">
-              <h1 className="my-5 text-center">Lorem Sandwich</h1>
+              <h1 className="my-5 text-center">{recipeDetail.title}</h1>
               <div className="">
                 <img src={resep} className="img-fluid" alt="" />
                 <div className="saved-like">
@@ -29,25 +43,18 @@ const DetailReceipe = () => {
         <div className="row mt-5">
           <div className="col-lg-8 offset-lg-2">
             <h3>Ingredients</h3>
-            <br />
-            <ul>
-              <li>2 Egss</li>
-              <li>2 tbsp mayonnaise</li>
-              <li>3 slice bread</li>
-              <li>a little butter</li>
-              <li>1/3 carton of cess</li>
-            </ul>
+            <strong>{recipeDetail.ingredients}</strong>
           </div>
         </div>
         {/* video step */}
         <section>
           <div className="row">
-            <div className="col-lg-8 offset-lg-2">
+            <div className="col-lg-8 offset-lg-2 mt-4">
               <h4>Video Step</h4>
               <div className="flex justify-content-columns">
                 <div className="row mt-3">
                   <div className="col-4">
-                    <Link to={"/video_page"}>
+                    <Link to={"/video-page"}>
                       <button className="btn btn-warning btn-w">video</button>
                     </Link>
                   </div>
@@ -66,9 +73,8 @@ const DetailReceipe = () => {
                     id=""
                     rows="5"
                     className="text-area p-2"
-                  >
-                    comment:
-                  </textarea>
+                    placeholder="comment:"
+                  ></textarea>
                 </div>
                 <div className="row d-flex justify-content-center">
                   <div className="col-lg-3 col-5 mt-2">
