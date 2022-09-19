@@ -78,10 +78,11 @@ const Register = () => {
                   Create new account to access all features
                 </h6>
               </div>
+              <hr />
               {/* form */}
               <form onSubmit={handleSubmit}>
                 <div className="name">
-                  <label for="name" className="form-label">
+                  <label for="name" className="form-label wb">
                     Name
                   </label>
                   <input
@@ -95,7 +96,7 @@ const Register = () => {
                   />
                 </div>
                 <div className="email mt-3">
-                  <label for="email" className="form-label">
+                  <label for="email" className="form-label wb">
                     Email address*
                   </label>
                   <input
@@ -109,7 +110,7 @@ const Register = () => {
                   />
                 </div>
                 <div className="phone mt-3">
-                  <label for="phone" className="form-label">
+                  <label for="phone" className="form-label wb">
                     Phone Number
                   </label>
                   <input
@@ -123,7 +124,7 @@ const Register = () => {
                   />
                 </div>
                 <div className="new-psw mt-3">
-                  <label for="new-psw" className="form-label">
+                  <label for="new-psw" className="form-label wb">
                     Create New Password
                   </label>
                   <input
@@ -141,11 +142,11 @@ const Register = () => {
                   </p>
                 </div>
                 <div className="psw mt-3">
-                  <label for="psw" className="form-label">
+                  <label for="psw" className="form-label wb">
                     New Password
                   </label>
                   <input
-                    type="text"
+                    type="password"
                     className="form-control"
                     id="psw"
                     required
@@ -161,7 +162,7 @@ const Register = () => {
                     id="check"
                     onChange={(e) => setIsChecked(e.target.checked)}
                   />
-                  <label for="check" className="check">
+                  <label for="check" className="check wb">
                     I agree to terms & condition
                   </label>
                 </div>
@@ -180,17 +181,14 @@ const Register = () => {
                 ) : (
                   <button
                     type="submit"
-                    className="btn btn-warning width-btn text-light my-3"
+                    className="btn btn-warning width-btn text-light my-3 wb"
                   >
-                    Primary
+                    Sing Up
                   </button>
                 )}
-                {/* <button className="btn btn-warning width-btn text-light my-3">
-                  Register Account
-                </button> */}
               </form>
 
-              <div className="sign-up d-flex justify-content-center">
+              <div className="sign-up d-flex justify-content-center wb fz">
                 <p>
                   Already have an account?{" "}
                   <Link to="/login" className="login-here">
