@@ -68,3 +68,17 @@ span.anticon svg path{
 .ant-form .ant-btn span{
     color: #fff;
 }
+
+.upload-img .ant-upload-list-picture-card-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.upload-img .ant-upload-list-picture-card-container .ant-btn{
+    display: none;
+}
+
+.upload-img .ant-upload-list-picture-card:hover{
+    background-color: none;
+}
