@@ -5,7 +5,27 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+.saved-like {
+  float: right;
+  position: relative;
+  margin-top: -55px;
+  margin-right: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.saved {
+  margin-right: 15px !important;
+  width: 30px;
+  height: 30px;
+}
+
+.like {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
   .text-area {
     width: 80%;
   }

@@ -3,6 +3,8 @@ import "./detailReceipe.css";
 import resep from "../../asset/img/resep.svg";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import FooterRecipe from "../../components/footer/footerRecipe";
+import saved from "../../asset/img/saved.svg";
+import like from "../../asset/img/like.svg";
 import { Link } from "react-router-dom";
 
 const DetailReceipe = () => {
@@ -14,7 +16,13 @@ const DetailReceipe = () => {
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 col-md-8">
               <h1 className="my-5 text-center">Lorem Sandwich</h1>
-              <img src={resep} className="img-fluid" alt="" />
+              <div className="">
+                <img src={resep} className="img-fluid" alt="" />
+                <div className="saved-like">
+                  <img src={saved} className="saved" alt="" />
+                  <img src={like} alt="" className="like" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
