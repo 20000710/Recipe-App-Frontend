@@ -1,0 +1,37 @@
+.btn-w {
+  width: 100%;
+}
+.text-area {
+  width: 100%;
+}
+
+.saved-like {
+  float: right;
+  position: relative;
+  margin-top: -55px;
+  margin-right: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.saved {
+  margin-right: 15px !important;
+  width: 30px;
+  height: 30px;
+}
+
+.like {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-area {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .text-area {
+    width: 90%;
+  }
+}
