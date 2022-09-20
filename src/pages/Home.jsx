@@ -5,7 +5,7 @@ import "./Style.css";
 import Popular from "../components/Popular";
 import PopularRecipe from "../components/PopularRecipe";
 import NewRecipe from "../components/NewRecipe";
-import Footer from "../components/footer/index";
+import Footer from "../components/Footer/index";
 
 const Home = () => {
   return (

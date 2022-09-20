@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import "./detailReceipe.css";
 import resep from "../../asset/img/resep.svg";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import FooterRecipe from "../../components/footer/footerRecipe";
+import Footer from "../../components/Footer/index";
 import saved from "../../asset/img/saved.svg";
 import like from "../../asset/img/like.svg";
 import { Link, useParams } from "react-router-dom";
@@ -207,13 +207,11 @@ const DetailReceipe = () => {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 mt-4">
               <h4>Video Step</h4>
-              <div className="flex justify-content-columns">
-                <div className="row mt-3">
-                  <div className="col-4">
-                    <Link to={"/video-page"}>
-                      <button className="btn btn-warning btn-w">video</button>
-                    </Link>
-                  </div>
+              <div className="row mt-3 d-flex justify-content-start">
+                <div className="col-3">
+                  <Link to={"/video-page"}>
+                    <button className="btn btn-warning btn-w">video</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -244,7 +242,15 @@ const DetailReceipe = () => {
           </div>
         </section>
       </div>
-      <FooterRecipe />
+      {/* comment */}
+      <section>
+        <div className="row my-5">
+          <div className="col-lg-8">
+            <h2>Comment</h2>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </Fragment>
   );
 };
