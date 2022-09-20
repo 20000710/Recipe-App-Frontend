@@ -13,7 +13,8 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace="true" />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
         <Route
@@ -35,9 +36,9 @@ const Router = () => {
         <Route
           path="/add-recipe"
           element={
-            <Auth>
-              <AddRecipe />
-            </Auth>
+            // <Auth>
+            <AddRecipe />
+            // </Auth>
           }
         />
         <Route
