@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 import './navbarMenu.css'
 
-const NavbarMenu = ({ menu1, menu2, menu3 }) => {
+const NavbarMenu = ({ menu1, menu2, menu3, link1, link2, link3 }) => {
 
   return (
     <Navbar>
@@ -12,13 +12,13 @@ const NavbarMenu = ({ menu1, menu2, menu3 }) => {
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-start">
         <Navbar.Text>
-          <Link to="/home">{menu1}</Link>
+          <Link to={link1}>{menu1}</Link>
         </Navbar.Text>
         <Navbar.Text>
-          <Link to="/add-recipe">{menu2}</Link>
+          <Link to={link2}>{menu2}</Link>
         </Navbar.Text>
         <Navbar.Text>
-          <Link to="/profile">{menu3}</Link>
+          <Link to={link3}>{menu3}</Link>
         </Navbar.Text>
       </Navbar.Collapse>
     </Container>
