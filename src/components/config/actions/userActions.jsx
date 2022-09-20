@@ -8,9 +8,7 @@ export const register = (data, navigate, setLoading) => async (dispatch) => {
       data
     );
     const user = result.data.data;
-    console.log(user);
     dispatch({ type: "USER_REGISTER_SUCCESS", payload: user });
-    alert(result.data.message);
     Swal.fire({
       text: result.data.message,
       icon: "success",
