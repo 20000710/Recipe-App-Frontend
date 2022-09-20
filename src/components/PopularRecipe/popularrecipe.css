@@ -1,0 +1,47 @@
+.popular-header {
+  display: flex;
+  margin-left: 1em;
+  align-items: center;
+}
+
+.img-header {
+  height: 90px;
+}
+
+.content-popular {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.image-popular-recipe {
+  position: relative;
+  display: flex;
+  height: 350px;
+  margin-bottom: 2em;
+}
+
+.image-popular-recipe img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 2rem;
+  margin: 0 1rem;
+  color: black;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  figcaption {
+    position: inherit;
+    bottom: inherit;
+    margin: 0.25rem 0px;
+    font-size: inherit;
+    color: inherit;
+  }
+}

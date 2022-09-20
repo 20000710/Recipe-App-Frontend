@@ -1,6 +1,6 @@
 .navbar{
+    margin: 0;
     padding-top: 4rem!important;
-    margin-bottom: 148px;
 }
 
 .navbar-text{
@@ -13,5 +13,10 @@
     font-size: 18px;
     line-height: 23px;
     text-align: center;
-    color: #2E266F;
+    color: #2E266F !important;
 }
+
+.navbar-text a:focus{
+    text-decoration: underline;
+}
+
