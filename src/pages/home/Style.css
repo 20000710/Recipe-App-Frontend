@@ -7,7 +7,7 @@
 .container-home {
   background: linear-gradient(90deg, #fff5ec 78%, #efc81a 60%);
   width: 100%;
-  z-index: -1;
+  z-index: -99999;
   top: 0;
   left: 0;
 }
@@ -17,11 +17,11 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .col-6 {
-  flex-basis: 41%;
+  flex-basis: 41% !important;
   min-width: 300px;
 }
 
