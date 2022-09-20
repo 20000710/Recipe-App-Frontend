@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import "./detailReceipe.css";
 import resep from "../../asset/img/resep.svg";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import FooterRecipe from "../../components/footer/footerRecipe";
+import FooterRecipe from "../../components/footer/index";
 import saved from "../../asset/img/saved.svg";
 import like from "../../asset/img/like.svg";
 import { Link, useParams } from "react-router-dom";

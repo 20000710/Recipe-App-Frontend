@@ -1,17 +1,17 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import MainImage from "../assets/img/main-image.svg";
+import React, { Fragment } from "react";
+import NavbarMenu from "../../components/navbar/navbarMenu";
+import MainImage from "../../assets/img/main-image.svg";
 import "./Style.css";
-import Popular from "../components/Popular";
-import PopularRecipe from "../components/PopularRecipe";
-import NewRecipe from "../components/NewRecipe";
-import Footer from "../components/Footer";
+import Popular from "../../components/Popular";
+import PopularRecipe from "../../components/PopularRecipe";
+import NewRecipe from "../../components/NewRecipe";
+import Footer from "../../components/footer";
 
 const Home = () => {
   return (
-    <section>
+    <Fragment>
       <div className="container-home">
-        <Navbar />
+        <NavbarMenu menu1="Home" menu2="Add Recipe" menu3="Profile" />
         <div className="row">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>
@@ -35,7 +35,7 @@ const Home = () => {
       <NewRecipe />
       <PopularRecipe />
       <Footer />
-    </section>
+    </Fragment>
   );
 };
 export default Home;
