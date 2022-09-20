@@ -1,0 +1,73 @@
+.profile-img{
+    margin-top: 9rem;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img .ant-avatar{
+    position: absolute;
+}
+
+.profile-img .profile-name{
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000 !important;
+    margin-top: 1.5rem;
+}
+
+.anticon.edit-profile{
+    margin-top: 10rem;
+    margin-left: 9rem;
+}
+
+.anticon.edit-profile > svg{
+    width: 18px!important;
+    height: 18px!important;
+}
+
+.change-profile{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 319px;
+}
+
+.change-profile .update-photo,
+.change-profile .change-password{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.change-profile .update-photo .ant-upload,
+.update-photo .ant-upload-picture-card-wrapper,
+.change-password button{
+    border: none;
+    background: #E7E7E7;
+    height: 40px;
+    width: 100%;
+}
+
+.change-password button:hover,
+.change-password button:focus{
+    background: #E7E7E7; 
+}
+
+.change-profile .update-photo .ant-upload,
+.change-password span
+{
+    color: #3F3A3A;
+    font-weight: 500;
+}
+
+.change-profile .update-photo .ant-upload,
+.update-photo .ant-upload-picture-card-wrapper{
+    border-radius: 15px 15px 0 0;
+}
+
+.change-password button{
+    border-radius:  0 0 15px 15px;
+}
+

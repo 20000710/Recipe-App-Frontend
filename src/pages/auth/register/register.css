@@ -13,7 +13,7 @@
 }
 
 .img-bg {
-  background-image: url(/asset/img/Mask\ Group.svg);
+  background-image: url(../../../asset/img/Mask\ Group.svg);
   background-position: center;
 
   background-size: 100%;
@@ -45,9 +45,23 @@ span {
 .icon-mama {
   width: 100px;
 }
+.login-here {
+  color: #efc81a !important;
+}
+
+.check {
+  margin-left: 10px;
+}
+
+.wb {
+  font-weight: bold !important;
+}
 
 @media screen and (max-width: 600px) {
   .form-input {
     width: 88%;
+  }
+  .fz {
+    font-size: 14px;
   }
 }
