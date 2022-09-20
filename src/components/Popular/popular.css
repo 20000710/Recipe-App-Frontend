@@ -1,0 +1,29 @@
+.popular-header {
+  display: flex;
+  margin-left: 1em;
+  align-items: center;
+}
+
+.img-header {
+  height: 90px;
+}
+
+.content-popular {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.image-popular {
+  position: relative;
+  display: flex;
+  height: 350px;
+  margin-top: 2em;
+}
+
+.image-popular img {
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
