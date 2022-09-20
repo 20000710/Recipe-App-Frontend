@@ -8,7 +8,6 @@ export const getDetailRecipe = (id) => async (dispatch) => {
     );
 
     const result = recipe.data.data;
-    console.log(result);
     dispatch({ type: "GET_DETAIL_RECIPE", payload: result });
   } catch (error) {
     Swal.fire({
