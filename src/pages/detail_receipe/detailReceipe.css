@@ -8,9 +8,8 @@
 .saved-like {
   float: right;
   position: relative;
-  margin-top: -55px;
+  margin-top: 12px;
   margin-right: 20px;
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -18,11 +17,21 @@
   margin-right: 15px !important;
   width: 30px;
   height: 30px;
+  cursor: pointer !important;
 }
 
 .like {
   width: 30px;
   height: 30px;
+  cursor: pointer !important;
+}
+
+.img-recipe {
+  width: 100% !important;
+}
+
+.checkbox {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {

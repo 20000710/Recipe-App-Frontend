@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <Fragment>
       <div className="container-home">
-        <NavbarMenu menu1="Home" menu2="Add Recipe" menu3="Profile" />
-        <div className="row">
+        <Navbar />
+        <div className="row home">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>
             <div className="search-wrapper">
