@@ -1,0 +1,25 @@
+.main-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .heading {
+  font-size: 50px;
+} */
+
+.column-text-heading {
+  margin-top: 6em;
+  margin-left: 9em;
+  width: 100%;
+}
+
+img.bg-1 {
+  width: 500px;
+}
+
+.content-newrecipe {
+  display: flex;
+  align-items: center;
+}
