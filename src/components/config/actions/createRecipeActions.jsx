@@ -2,11 +2,12 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const createRecipe = (data, saveImage) => async (dispatch) => {
+    console.log('dataRedux: ', data)
+    console.log('imageRedux: ', saveImage)
     try {
         const formData = new FormData();
         formData.append("title", data.title);
         formData.append("ingredients", data.ingredients);
-        formData.append("user_id", data.user_id);
         formData.append("liked", data.liked);
         formData.append("saved", data.saved);
         formData.append("popularity", data.popularity);

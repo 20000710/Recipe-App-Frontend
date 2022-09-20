@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar/index";
 import MainImage from "../assets/img/main-image.svg";
 import "./Style.css";
 import Popular from "../components/Popular";
 import PopularRecipe from "../components/PopularRecipe";
 import NewRecipe from "../components/NewRecipe";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/index";
 
 const Home = () => {
   return (
