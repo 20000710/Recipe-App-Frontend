@@ -12,7 +12,7 @@
   left: 0;
 }
 
-.row {
+.row.home {
   display: flex;
   align-items: center;
   flex-wrap: wrap;

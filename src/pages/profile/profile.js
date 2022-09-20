@@ -1,9 +1,9 @@
 import React from "react";
 import ProfileAvatar from "../../components/avatar/profileAvatar";
-import Footer from "../../components/Footer/index";
+import Footer from "../../components/footer/index";
 import profileImg from "../../asset/img/profile-img.png";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import myRecipe from "../myRecipe/myRecipe";
+import MyRecipe from "../myRecipe/myRecipe";
 
 const Profile = () => {
   return (
@@ -26,7 +26,7 @@ const Profile = () => {
         link3="/#liked-recipe"
       />
       <hr style={{ border: "1px solid #DFDFDF", marginBottom: "50px" }} />
-      <myRecipe />
+      <MyRecipe />
       <Footer />
     </div>
   );
