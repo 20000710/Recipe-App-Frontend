@@ -1,0 +1,67 @@
+.test {
+  background-color: salmon;
+}
+.h {
+  height: 100vh;
+}
+.a {
+  background-color: #efc81a;
+}
+
+.form-input {
+  width: 60%;
+}
+
+.img-bg {
+  background-image: url(../../../asset/img/Mask\ Group.svg);
+  background-position: center;
+
+  background-size: 100%;
+}
+
+.width-btn {
+  width: 100%;
+  padding: 12px;
+}
+
+h3 {
+  color: #efc81a;
+  font-weight: bold;
+}
+
+p {
+  color: #999999;
+}
+
+h6 {
+  color: #8692a6;
+}
+
+label,
+span {
+  color: #696f79;
+}
+
+.icon-mama {
+  width: 100px;
+}
+.login-here {
+  color: #efc81a !important;
+}
+
+.check {
+  margin-left: 10px;
+}
+
+.wb {
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 600px) {
+  .form-input {
+    width: 88%;
+  }
+  .fz {
+    font-size: 14px;
+  }
+}
