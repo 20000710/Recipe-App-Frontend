@@ -5,14 +5,14 @@ import "./Style.css";
 import Popular from "../components/Popular";
 import PopularRecipe from "../components/PopularRecipe";
 import NewRecipe from "../components/NewRecipe";
-import Footer from "../components/Footer/index";
+import Footer from "../components/footer/index";
 
 const Home = () => {
   return (
     <section>
       <div className="container-home">
         <Navbar />
-        <div className="row">
+        <div className="row home">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>
             <div className="search-wrapper">
