@@ -1,17 +1,25 @@
 import React, { Fragment } from "react";
-import NavbarMenu from "../../components/navbar/navbarMenu";
+import NavbarMenu from "../../components/navbar/index";
 import MainImage from "../../assets/img/main-image.svg";
 import "./Style.css";
 import Popular from "../../components/Popular";
 import PopularRecipe from "../../components/PopularRecipe";
 import NewRecipe from "../../components/NewRecipe";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/index";
 
 const Home = () => {
+  window.scrollTo(0, 0);
   return (
     <Fragment>
       <div className="container-home">
-        <Navbar />
+        <NavbarMenu
+          menu1="Home"
+          menu2="Add Recipe"
+          menu3="Profile"
+          link1="/home"
+          link2="/add-recipe"
+          link3="/profile"
+        />
         <div className="row home">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>

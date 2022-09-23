@@ -1,8 +1,11 @@
 import React from "react";
 import "./navbar.css";
 import Profile from "../../assets/img/profile.svg";
+import { Link } from "react-router-dom";
+import Logout from "../loguot/Loguot";
 
 const Navbar = () => {
+  const token = localStorage.getItem("token");
   return (
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -36,9 +39,15 @@ const Navbar = () => {
             </li>
           </ul>
           <img src={Profile} alt="" />
-          <button class="btn me-5" type="submit">
-            Login
-          </button>
+          {!token ? (
+            <Link to="/login">
+              <button class="btn me-5" type="submit">
+                Login
+              </button>
+            </Link>
+          ) : (
+            <Logout />
+          )}
         </div>
       </div>
     </nav>

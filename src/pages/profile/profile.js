@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileAvatar from "../../components/avatar/profileAvatar";
-import Footer from "../../components/footer/index";
+import Footer from "../../components/Footer/index";
 import profileImg from "../../asset/img/profile-img.png";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import MyRecipe from "../myRecipe/myRecipe";
