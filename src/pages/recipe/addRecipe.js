@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Footer from "../../components/Footer/index";
+import Footer from "../../components/footer";
 import FormAddRecipe from "../../components/form/formAddRecipe";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 
