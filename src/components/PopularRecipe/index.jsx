@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../assets/img/popular-header.svg";
-import Popular1 from "../../assets/img/popular-1.svg";
-import Popular2 from "../../assets/img/popular-2.svg";
 import "./popularrecipe.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -11,7 +9,7 @@ const PopularRecipe = () => {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_API_BACKEND + "/recipe/latest")
+      .get(process.env.REACT_APP_API_BACKEND + "/recipe/popular")
       .then((res) => {
         console.log(res);
         setRecipe(res.data.data);
