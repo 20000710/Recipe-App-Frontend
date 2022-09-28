@@ -20,6 +20,14 @@
   margin-right: 0 !important;
 }
 
+.search-wrapper {
+  display: flex;
+}
+
+.form-control.search-input {
+  width: 70%;
+}
+
 .col-6 {
   flex-basis: 41% !important;
   min-width: 300px;
