@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./detailReceipe.css";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import Footer from "../../components/Footer/index";
+import Footer from "../../components/footer";
 import saved from "../../asset/img/saved.svg";
 import like from "../../asset/img/like.svg";
 import { Link, useParams } from "react-router-dom";
