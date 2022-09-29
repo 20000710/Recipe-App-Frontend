@@ -8,10 +8,10 @@
   height: 90px;
 }
 
-.content-popular {
-  display: flex;
+.content-popular-recipe {
   align-items: center;
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 .image-popular-recipe {

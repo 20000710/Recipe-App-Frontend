@@ -9,7 +9,7 @@ const PopularRecipe = () => {
 
   useEffect(() => {
     axios
-      .get(process.env.REACT_APP_API_BACKEND + "/recipe/popular")
+      .get(process.env.REACT_APP_API_BACKEND + "/popular")
       .then((res) => {
         console.log(res);
         setRecipe(res.data.data);
@@ -29,8 +29,8 @@ const PopularRecipe = () => {
         <img src={Header} className="img-header my-5" alt="" />
         <h1 className="px-3 my-5">Popular Recipe</h1>
       </div>
-      <div className="content-popular">
-        <div className="row">
+      <div className="content-popular-recipe">
+        <div className="row g-0">
           {recipe.map((item) => (
             <div className="image-popular-recipe col-md-4" key={item.id}>
               <figure className="position-relative">

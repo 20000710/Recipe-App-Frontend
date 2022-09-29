@@ -17,7 +17,7 @@ const NewRecipe = () => {
       </div>
       <div className="content-newrecipe">
         <div className="row">
-          <div className="col-6 me-3">
+          <div className="col-6 me-3 ms-3">
             <img className="bg-1" src={MainImage} alt="" />
           </div>
           <div className="col-6">

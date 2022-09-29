@@ -6,17 +6,19 @@ import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import Footer from "../../components/footer";
+import Pagination from "../../components/pagination/index.js";
 
 const MyRecipe = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("");
   const [recipe, setRecipe] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recipePerPage] = useState(3);
 
   const handleSort = (e) => {
     setSort(e.currentTarget.value);
   };
-  console.log(search);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ const MyRecipe = () => {
       searchParams.get("search") === null ? "" : searchParams.get("search");
     axios
       .get(
-        `${process.env.REACT_APP_API_BACKEND}/recipe?search=${cari}&sort=${sort}`
+        `${process.env.REACT_APP_API_BACKEND}/recipe?search=${cari}&mode=${sort}`
       )
       .then((response) => {
         console.log(response.data.data);
@@ -50,18 +52,45 @@ const MyRecipe = () => {
   }, [searchParams]);
   // console.log(searchParams.get("sort"));
 
+  const indexOfLastPost = currentPage * recipePerPage;
+  const indexOfFirstPost = indexOfLastPost - recipePerPage;
+  const currentPosts = recipe.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div className="h-100">
-      <NavbarMenu />
-      <div className="container">
+      <NavbarMenu
+        menu1="Home"
+        menu2="Add Recipe"
+        menu3="Profile"
+        link1="/home"
+        link2="/add-recipe"
+        link3="/profile"
+      />
+      <div className="container mt-5">
         <div className="row">
           <div className="products">
             <h3 className="title">Recipe List</h3>
-            <p className="mt-5">Recipe List</p>
+            <div className="search-wrapper mb-2">
+              <input
+                type="search"
+                className="form-control search-input"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                name="search"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              <button
+                type="button"
+                class="btn btn-warning ms-1"
+                onClick={handleSearch}
+              >
+                Search
+              </button>
+            </div>
           </div>
-
-          {/* <div className="row row-cols-2 row-cols-sm-3 row-cols-md-5 mt-5">
-        </div> */}
           <form onSubmit={handleSearch}>
             <select onChange={handleSort}>
               <option value="">Pilih Option</option>
@@ -71,8 +100,8 @@ const MyRecipe = () => {
             <button type="submit">Sort</button>
           </form>
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
-            {recipe.length > 0 ? (
-              recipe.map((item) => (
+            {currentPosts.length > 0 ? (
+              currentPosts.map((item) => (
                 <div className="image-popular-recipe col-md-4" key={item.id}>
                   <figure className="position-relative">
                     <img
@@ -87,16 +116,19 @@ const MyRecipe = () => {
                 </div>
               ))
             ) : (
-              <div className=" text-center m-auto mb-5">
+              <div className=" text-center m-auto mb-3">
                 <h2>Recipe Not Found</h2>
-                <Footer />
               </div>
             )}
           </div>
-          {/* <div className="row row-cols-2 row-cols-sm-3 row-cols-md-5 mt-5 justify-content-evenly">
-        </div> */}
+          <Pagination
+            recipePerPage={recipePerPage}
+            totalRecipe={recipe.length}
+            paginate={paginate}
+          />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

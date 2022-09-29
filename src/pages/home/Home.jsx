@@ -18,7 +18,7 @@ const Home = () => {
   const handleSearch = () => {
     navigate({
       pathname: "/myRecipe",
-      search: "?search=" + search + "&sort=" + searchParams.get("sort"),
+      search: "?search=" + search + "&mode=" + searchParams.get("sort"),
     });
   };
   window.scrollTo(0, 0);
@@ -56,8 +56,6 @@ const Home = () => {
             </div>
           </div>
           <div className="col-6 me-3 ">
-            {/* <img className="vector-1" src={Vector} alt="" />
-          <img className="vector-2" src={Vector} alt="" /> */}
             <img src={MainImage} alt="" />
           </div>
         </div>
