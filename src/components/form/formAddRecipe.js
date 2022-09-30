@@ -13,7 +13,7 @@ import {
 import { useDispatch } from 'react-redux';
 const { TextArea } = Input;
 
-const FormAddRecipe = () => {
+const FormAddRecipe = ({id_user}) => {
     const dispatch = useDispatch()
     const [componentDisabled, setComponentDisabled] = useState(false);
     const [saveImage, setSaveImage] = useState(null);
@@ -33,7 +33,6 @@ const FormAddRecipe = () => {
     };
 
     const handleUpload = (e) => {
-        console.log('e: ', e)
         const uploader = e.fileList[0]
         console.log('uploader: ', uploader)
         setSaveImage(uploader)
@@ -48,18 +47,29 @@ const FormAddRecipe = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(createRecipe(data, saveImage))
+        dispatch(createRecipe(data, saveImage, id_user))
+        setData({
+            ...data,
+            title: "",
+            ingredients: "",
+            // user_id: "",
+            liked: 0,
+            saved: 0,
+            popularity: 0,
+        })
     }
-
+    console.log('user_id', id_user)
     return (
         <Form
-            onSubmit={handleSubmit}
             layout="horizontal"
             onValuesChange={onFormLayoutChange}
             disabled={componentDisabled}
         >
             <Form.Item className="upload-img" valuePropName="fileList">
-                <Upload onChange={handleUpload} listType="picture-card">
+                <Upload 
+                    onChange={handleUpload} 
+                    listType="picture-card"
+                    beforeUpload={() => false}>
                     <div>
                         <Icon component={uploadIcon} />
                         <div style={{ marginTop: 8 }}>
@@ -81,7 +91,7 @@ const FormAddRecipe = () => {
                 <Input name="video" value={data.video} onChange={handleChange} placeholder="Video" />
             </Form.Item>
             <Form.Item>
-                <Button type="primary" htmlType="submit">Post</Button>
+                <Button type="submit" onClick={handleSubmit} >Post</Button>
             </Form.Item>
         </Form>
     )

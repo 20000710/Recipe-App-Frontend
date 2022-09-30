@@ -1,22 +1,18 @@
 const initialState = {
-    users: [],
+    // users: [],
     detailUser: []
 }
 
-const userProfileReducer = (state = initialState, action) => {
-    if(action.type === "GET_ALL_USER"){
+export const userProfileReducer = (state = initialState, action) => {
+    console.log('action: ', action)
+    if(action.type === "GET_DETAIL_USER"){
         return{
             ...state,
-            users: action.payload
-        }
-    } else if(action.type === "GET_DETAIL_USER"){
-        return{
-            ...state,
-            detailUser: action.payload
+            detailUser: action.payload,
         }
     } else{
-        return state
+        return state;
     }
 }
 
-export default userProfileReducer
+ 
