@@ -9,6 +9,7 @@ import DetailReceipe from "../pages/detail_receipe/DetailReceipe";
 import VideoPage from "../pages/video_page/VideoPage";
 import Home from "../pages/home/Home";
 import MyRecipe from "../pages/myRecipe/myRecipe";
+import SearchRecipe from "../pages/searchRecipe/searchRecipe";
 
 const Router = () => {
   return (
@@ -27,6 +28,7 @@ const Router = () => {
           }
         />
         <Route path="/myRecipe" element={<MyRecipe />} />
+        <Route path="/searchRecipe" element={<SearchRecipe />} />
         <Route
           path="/video-page"
           element={

@@ -17,7 +17,7 @@ const Home = () => {
 
   const handleSearch = () => {
     navigate({
-      pathname: "/myRecipe",
+      pathname: "/searchRecipe",
       search: "?search=" + search + "&mode=" + searchParams.get("sort"),
     });
   };
