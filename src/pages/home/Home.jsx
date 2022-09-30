@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import NavbarMenu from "../../components/navbar/navbarMenu";
+import Navbar from "../../components/navbar/index";
 import MainImage from "../../assets/img/main-image.svg";
 import "./Style.css";
 import Popular from "../../components/Popular";
@@ -11,7 +11,13 @@ const Home = () => {
   return (
     <Fragment>
       <div className="container-home">
-        <Navbar />
+        <Navbar 
+        menu1="Home"
+        menu2="Add Recipe"
+        menu3="Profile"
+        link1="/home"
+        link2="/add-recipe"
+        link3="/profile" />
         <div className="row home">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>

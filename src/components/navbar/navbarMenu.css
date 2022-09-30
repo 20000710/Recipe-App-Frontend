@@ -7,16 +7,23 @@
     margin-right: 100px;
 }
 
-.navbar-text a{
+.nav-menu{
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 23px !important;
     color: #2E266F !important;
 }
 
 .navbar-text a:focus{
     text-decoration: underline;
 }
+
+/* @media screen and (max-width: 520px) {
+    .navbar-menu{
+        justify-content: center;
+    }
+} */
+
+
 

@@ -42,7 +42,7 @@ const Router = () => {
           }
         />
         <Route
-          path="/profile"
+          path="/profile/:id"
           element={
             <Auth>
               <Profile />

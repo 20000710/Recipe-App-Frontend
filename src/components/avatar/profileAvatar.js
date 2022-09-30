@@ -5,7 +5,7 @@ import Icon from "@ant-design/icons";
 import { ReactComponent as edit } from '../../asset/img/edit.svg'
 import { Link } from 'react-router-dom';
 
-const ProfileAvatar = ({ img }) => {
+const ProfileAvatar = ({ img, photo, profileName }) => {
   const [visible, setVisible] = useState(false)
 
   const editModal = () => {
@@ -18,7 +18,7 @@ const ProfileAvatar = ({ img }) => {
 
   return (
     <div className="profile-img">
-      <Avatar src={img} size={172} />
+      <Avatar src={photo} size={172} />
       <Link to={"#"} onClick={editModal}>
         <Icon className="edit-profile" component={edit} />
       </Link>
@@ -37,7 +37,7 @@ const ProfileAvatar = ({ img }) => {
           {/* <Input.Password placeholder="Change Password" /> */}
           </div>
           :
-          <p className="profile-name">Garneta Sharina</p>
+          <p className="profile-name">{profileName}</p>
         }
     </div>
   )
