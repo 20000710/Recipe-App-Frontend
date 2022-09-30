@@ -8,6 +8,7 @@ import Profile from "../pages/profile/profile";
 import DetailReceipe from "../pages/detail_receipe/DetailReceipe";
 import VideoPage from "../pages/video_page/VideoPage";
 import Home from "../pages/home/Home";
+import Recipe from "../pages/recipe/Recipe";
 import MyRecipe from "../pages/myRecipe/myRecipe";
 
 const Router = () => {
@@ -39,7 +40,7 @@ const Router = () => {
           path="/add-recipe"
           element={
             // <Auth>
-            <AddRecipe />
+            <Recipe />
             // </Auth>
           }
         />
