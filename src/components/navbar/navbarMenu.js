@@ -1,43 +1,51 @@
 import React from "react";
 import "./navbarMenu.css";
 
-const NavbarMenu = ({ link1, link2, link3 }) => {
+const NavbarMenu = ({ menu1, menu2, menu3, link1, link2, link3 }) => {
+  const isAuth = localStorage.getItem("token");
+  const logOut = () => {
+    localStorage.removeItem("token");
+  };
+
+  const authLinks = (
+    <Navbar.Collapse className="justify-content-start">
+      <Navbar.Text>
+        <Link to={link1}>{menu1}</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to={link2}>{menu2}</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to={link3}>{menu3}</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to="/login">
+          <button class="btn me-5" type="submit" onClick={logOut}>
+            Log out
+          </button>
+        </Link>
+      </Navbar.Text>
+    </Navbar.Collapse>
+  );
+
+  const guestLinks = (
+    <Navbar.Collapse>
+      <Navbar.Text>
+        <Link to={`/login`}>Login</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to={`/signup`}>Register</Link>
+      </Navbar.Text>
+    </Navbar.Collapse>
+  );
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
-            <li class="nav-item ms-5">
-              <a class="nav-link active nav-menu" aria-current="page" href={link1}>
-                home
-              </a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link nav-menu" href={link2}>
-                Add Recipe
-              </a>
-            </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link nav-menu" href={link3}>
-                Profile
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar>
+      <Container>
+        <Navbar.Toggle />
+        {isAuth ? authLinks : guestLinks}
+      </Container>
+    </Navbar>
   );
 };
 
