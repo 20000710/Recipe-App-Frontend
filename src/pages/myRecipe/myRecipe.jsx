@@ -1,11 +1,64 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import './myRecipe.css'
-// import GaleryImg from '../../components/galeryImage/galeryImg'
 import myRecipe1 from '../../asset/img/myrecipe1.png'
 import myRecipe2 from '../../asset/img/myrecipe2.png'
+import axios from "axios";
+import NavbarMenu from "../../components/navbar/navbarMenu";
+import Footer from "../../components/footer";
+import Pagination from "../../components/pagination/index.js";
 
 const MyRecipe = ({ likedRecipe, savedRecipe }) => {
   const [navigate, setNavigate] = useState("my-recipe")
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState("");
+  const [sort, setSort] = useState("");
+  const [recipe, setRecipe] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recipePerPage] = useState(3);
+
+  const handleSort = (e) => {
+    setSort(e.currentTarget.value);
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    getRecipe();
+    setSearchParams({
+      search,
+      sort,
+    });
+  };
+
+  const getRecipe = async () => {
+    const cari =
+      searchParams.get("search") === null ? "" : searchParams.get("search");
+    axios
+      .get(
+        `${process.env.REACT_APP_API_BACKEND}/recipe?search=${cari}&mode=${sort}`
+      )
+      .then((response) => {
+        console.log(response.data.data);
+        setRecipe(response.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  useEffect(() => {
+    getRecipe();
+    setSearch(searchParams.get("search"));
+    searchParams.get("search");
+    searchParams.get("sort");
+  }, [searchParams]);
+  // console.log(searchParams.get("sort"));
+
+  const indexOfLastPost = currentPage * recipePerPage;
+  const indexOfFirstPost = indexOfLastPost - recipePerPage;
+  const currentPosts = recipe.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   console.log('navigate: ', navigate)
   console.log("liked: ", likedRecipe)
   return (
@@ -51,7 +104,7 @@ const MyRecipe = ({ likedRecipe, savedRecipe }) => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MyRecipe
+export default MyRecipe;
