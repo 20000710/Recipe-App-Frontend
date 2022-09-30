@@ -1,4 +1,5 @@
 const initialState = {
+  recipe: [],
   recipeDetail: [],
   likedRecipe: [],
   savedRecipe: [],
@@ -30,6 +31,28 @@ export const recipeReducer = (state = initialState, action) => {
       ...state,
       savedRecipe: action.message
     }
+  } else if (action.type === "GET_ALL_RECIPE") {
+    return {
+      ...state,
+      recipe: action.payload,
+    };
+  } else if (action.type === "CREATE_PRODUCT") {
+    return state;
+  } else if (action.type === "DELETE_PRODUCT") {
+    return state;
+  } else if (action.type === "UPDATE_RECIPE") {
+    return state;
+  } else {
+    return state;
+  }
+};
+
+export const getNewRecipe = (state = initialState, action) => {
+  if (action.type === "GET_NEW_RECIPE") {
+    return {
+      ...state,
+      recipeDetail: action.payload,
+    };
   } else {
     return state;
   }

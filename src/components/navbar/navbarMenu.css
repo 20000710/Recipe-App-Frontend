@@ -1,10 +1,9 @@
-.navbar{
-    margin: 0;
-    padding-top: 4rem!important;
+.navbar {
+  margin: 0;
 }
 
-.navbar-text{
-    margin-right: 100px;
+.navbar-text {
+  margin-right: 100px;
 }
 
 .nav-menu{
@@ -15,15 +14,6 @@
     color: #2E266F !important;
 }
 
-.navbar-text a:focus{
-    text-decoration: underline;
+.navbar-text a:focus {
+  text-decoration: underline;
 }
-
-/* @media screen and (max-width: 520px) {
-    .navbar-menu{
-        justify-content: center;
-    }
-} */
-
-
-
