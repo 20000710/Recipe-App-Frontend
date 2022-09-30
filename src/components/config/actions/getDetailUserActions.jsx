@@ -1,15 +1,23 @@
 import axios from "axios"
 
-const getAllUser = (id) => async(dispatch) => {
+const getDetailUser = (id, token) => async(dispatch) => {
+    console.log('id: ', id)
+    console.log('token: ', token)
     try {
-        const users = await axios.get(
-            process.env.REACT_APP_API_BACKEND + "/users" + id
+        const detailUser = await axios.get(
+            process.env.REACT_APP_API_BACKEND + "/users/" + id,
+            {
+                headers: {
+                    token: token
+                }
+            }
         )
-        const result = users.data.data
+        const result = detailUser.data.data
+        console.log('result: ', result)
         dispatch({type: "GET_DETAIL_USER", payload: result})
     } catch (err) {
         console.log(err.message)
     }
 }
 
-export default getAllUser
+export default getDetailUser
