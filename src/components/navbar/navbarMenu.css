@@ -1,22 +1,20 @@
-.navbar{
-    margin: 0;
-    padding-top: 4rem!important;
+.navbar {
+  margin: 0;
 }
 
-.navbar-text{
-    margin-right: 100px;
+.navbar-text {
+  margin-right: 100px;
 }
 
-.navbar-text a{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    color: #2E266F !important;
+.navbar-text a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #2e266f !important;
 }
 
-.navbar-text a:focus{
-    text-decoration: underline;
+.navbar-text a:focus {
+  text-decoration: underline;
 }
-

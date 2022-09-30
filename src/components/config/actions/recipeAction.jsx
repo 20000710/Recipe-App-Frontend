@@ -118,4 +118,20 @@ export const GetAllRecipes = () => async (dispatch) => {
   } catch (err) {
     console.error(err.message);
   }
+}
+
+export const getNewRecipe = () => async (dispatch) => {
+  try {
+    const newRecipe = await axios.get(
+      process.env.REACT_APP_API_BACKEND + "/recipe/latest"
+    );
+
+    const result = newRecipe.data.data;
+    dispatch({ type: "GET_NEW_RECIPE", payload: result });
+  } catch (error) {
+    Swal.fire({
+      text: error,
+      icon: "error",
+    });
+  }
 };

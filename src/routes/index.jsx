@@ -8,7 +8,11 @@ import Profile from "../pages/profile/profile";
 import DetailReceipe from "../pages/detail_receipe/DetailReceipe";
 import VideoPage from "../pages/video_page/VideoPage";
 import Home from "../pages/home/Home";
+<<<<<<< features/logout
 import Recipe from "../pages/recipe/Recipe";
+=======
+import MyRecipe from "../pages/myRecipe/myRecipe";
+>>>>>>> master
 
 const Router = () => {
   return (
@@ -26,6 +30,7 @@ const Router = () => {
             </Auth>
           }
         />
+        <Route path="/myRecipe" element={<MyRecipe />} />
         <Route
           path="/video-page"
           element={
