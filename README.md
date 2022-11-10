@@ -3,7 +3,7 @@
 <!-- HEADER -->
 <div align="center">
   <a href="https://github.com/rifqiay/Angkasa-Ticketing-Frontend">
-    <img src="./ScreenShoot/logo.png" alt="Logo" width="200px">
+    <img src="./screenshot/logo.png" alt="Logo" width="200px">
   </a>
   
   <h3 align="center">Recipe-App-Frontend with React.js</h3>
@@ -101,8 +101,8 @@ Make sure that Node JS is installed on the computer.
 <p align="center" display=flex>
 <table>
   <tr>
-    <td><image src="./ScreenShoot/register page.png" alt="Register Page" width=100%></td>
-    <td><image src="./ScreenShoot/login page.png" alt="Login Page" width=100%/></td>
+    <td><image src="./screenshot/register page.png" alt="Register Page" width=100%></td>
+    <td><image src="./screenshot/login page.png" alt="Login Page" width=100%/></td>
   </tr>
    <tr>
     <td>Register</td>
@@ -110,16 +110,16 @@ Make sure that Node JS is installed on the computer.
   </tr>
   
   <tr>
-    <td><image src="./ScreenShoot/landing page.png" alt="Home Page" width=100% ></td>
-    <td><image src="./ScreenShoot/search page.png" alt="Search Flight from Home" width=100%/></td>
+    <td><image src="./screenshot/landing page.png" alt="Home Page" width=100% ></td>
+    <td><image src="./screenshot/search page.png" alt="Search Flight from Home" width=100%/></td>
   </tr>
   <tr>
     <td>Home</td>
     <td>Search</td>
   </tr>
   <tr>
-    <td><image src="./ScreenShoot/add recipe page.png" alt="Search Flight" width=100%/></td>
-    <td><image src="./ScreenShoot/resep detail.png" alt="Flight detail" width=100%></td>
+    <td><image src="./screenshot/add recipe page.png" alt="Search Flight" width=100%/></td>
+    <td><image src="./screenshot/resep detail.png" alt="Flight detail" width=100%></td>
   </tr>
   <tr>
      <td>Add Receipe</td>
@@ -127,8 +127,8 @@ Make sure that Node JS is installed on the computer.
   </tr>
   
   <tr>
-    <td><image src="./ScreenShoot/video page.png" alt="My booking flight" width=100%></td>
-    <td><image src="./ScreenShoot/profile page.png" alt="Profile" width=100%></td>
+    <td><image src="./screenshot/video page.png" alt="My booking flight" width=100%></td>
+    <td><image src="./screenshot/profile page.png" alt="Profile" width=100%></td>
   </tr>
   <tr>
     <td>Video</td>
