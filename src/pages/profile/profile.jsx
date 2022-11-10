@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ProfileAvatar from "../../components/avatar/profileAvatar";
-import Footer from "../../components/footer/index";
+import Footer from "../../components/Footer/index";
 import profileImg from "../../asset/img/profile-img.png";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import MyRecipe from "../myRecipe/myRecipe";
@@ -11,22 +11,19 @@ import getLikedRecipe from "../../components/config/actions/getlikedRecipeAction
 import getSavedRecipe from "../../components/config/actions/getSavedRecipeActions";
 
 const Profile = () => {
-  const dispatch = useDispatch()
-  const { detailUser } = useSelector((state) => state.userProfile)
-  const { likedRecipe } = useSelector((state) => state.recipe)
-  const { savedRecipe } = useSelector((state) => state.recipe)
+  const dispatch = useDispatch();
+  const { detailUser } = useSelector((state) => state.userProfile);
+  const { likedRecipe } = useSelector((state) => state.recipe);
+  const { savedRecipe } = useSelector((state) => state.recipe);
   let token = localStorage.getItem("token");
-  const decode = jwt_decode(token)
-  const id = decode.id
+  const decode = jwt_decode(token);
+  const id = decode.id;
 
   useEffect(() => {
-    dispatch(getDetailUser(id, token))
-    dispatch(getLikedRecipe(token))
-    dispatch(getSavedRecipe(token))
-  }, [])
-
-  console.log('likedRecipe: ', likedRecipe);
-  console.log('savedRecipe: ', savedRecipe);
+    dispatch(getDetailUser(id, token));
+    dispatch(getLikedRecipe(token));
+    dispatch(getSavedRecipe(token));
+  }, []);
 
   return (
     <div>
@@ -39,8 +36,12 @@ const Profile = () => {
         idParam={id}
         link3={`/profile/${id}`}
       />
-      <ProfileAvatar profileName={detailUser.name} photo={detailUser.photo} img={profileImg} />
-      <MyRecipe likedRecipe={likedRecipe} savedRecipe={savedRecipe}/>
+      <ProfileAvatar
+        profileName={detailUser.name}
+        photo={detailUser.photo}
+        img={profileImg}
+      />
+      <MyRecipe likedRecipe={likedRecipe} savedRecipe={savedRecipe} />
       <Footer />
     </div>
   );

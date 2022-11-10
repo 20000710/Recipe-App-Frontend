@@ -5,15 +5,29 @@ import ModalEdit from "../../components/ModalEdit";
 import ModalDelete from "../../components/ModalDelete";
 import { GetAllRecipes } from "../../components/config/actions/recipeAction";
 import { useDispatch, useSelector } from "react-redux";
+import NavbarMenu from "../../components/navbar/navbarMenu";
+import jwt_decode from "jwt-decode";
+import Footer from "../../components/Footer/index";
 
 const Recipe = () => {
   const dispatch = useDispatch();
+  const token = localStorage.getItem("token");
+  const decode = jwt_decode(token);
+  const id = decode.id;
   const { recipe } = useSelector((state) => state.recipe);
   useEffect(() => {
     dispatch(GetAllRecipes());
   }, []);
   return (
     <div className="container">
+      <NavbarMenu
+        menu1="Home"
+        menu2="Add Recipe"
+        menu3="Profile"
+        link1="/home"
+        link2="/add-recipe"
+        link3={`/profile/${id}`}
+      />
       <h1 className="my-4">Recipe</h1>
       <ModalCreate>Add Recipe</ModalCreate>
       <table className="table table-bordered mt-3">
@@ -78,6 +92,7 @@ const Recipe = () => {
           ))}
         </tbody>
       </table>
+      <Footer />
     </div>
   );
 };

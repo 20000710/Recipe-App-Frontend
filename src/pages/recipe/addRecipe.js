@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/index";
 import FormAddRecipe from "../../components/form/formAddRecipe";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import jwt_decode from "jwt-decode";
 
 const AddRecipe = () => {
   let token = localStorage.getItem("token");
-  const decode = jwt_decode(token)
-  const {id} = decode
-  console.log('decode: ', decode)
+  const decode = jwt_decode(token);
+  const { id } = decode;
+  console.log("decode: ", decode);
   return (
     <Fragment>
       <NavbarMenu

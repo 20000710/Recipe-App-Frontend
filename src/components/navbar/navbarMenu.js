@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbarMenu.css";
+import { Navbar, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavbarMenu = ({ menu1, menu2, menu3, link1, link2, link3 }) => {
   const isAuth = localStorage.getItem("token");
