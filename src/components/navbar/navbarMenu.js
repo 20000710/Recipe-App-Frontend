@@ -3,7 +3,7 @@ import "./navbarMenu.css";
 import { Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const NavbarMenu = ({ menu1, menu2, menu3, link1, link2, link3 }) => {
+const NavbarMenu = ({ idParam }) => {
   const isAuth = localStorage.getItem("token");
   const logOut = () => {
     localStorage.removeItem("token");
@@ -12,13 +12,13 @@ const NavbarMenu = ({ menu1, menu2, menu3, link1, link2, link3 }) => {
   const authLinks = (
     <Navbar.Collapse className="justify-content-start">
       <Navbar.Text>
-        <Link to={link1}>{menu1}</Link>
+        <Link to="/home">Home</Link>
       </Navbar.Text>
       <Navbar.Text>
-        <Link to={link2}>{menu2}</Link>
+        <Link to="/add-recipe">Add Recipe</Link>
       </Navbar.Text>
       <Navbar.Text>
-        <Link to={link3}>{menu3}</Link>
+        <Link to={`/profile/${idParam}`}>Profile</Link>
       </Navbar.Text>
       <Navbar.Text>
         <Link to="/login">

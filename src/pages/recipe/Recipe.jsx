@@ -20,14 +20,7 @@ const Recipe = () => {
   }, []);
   return (
     <div className="container">
-      <NavbarMenu
-        menu1="Home"
-        menu2="Add Recipe"
-        menu3="Profile"
-        link1="/home"
-        link2="/add-recipe"
-        link3={`/profile/${id}`}
-      />
+      <NavbarMenu />
       <h1 className="my-4">Recipe</h1>
       <ModalCreate>Add Recipe</ModalCreate>
       <table className="table table-bordered mt-3">

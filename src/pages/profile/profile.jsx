@@ -27,15 +27,7 @@ const Profile = () => {
 
   return (
     <div>
-      <NavbarMenu
-        menu1="Home"
-        menu2="Add Recipe"
-        menu3="Profile"
-        link1="/home"
-        link2="/add-recipe"
-        idParam={id}
-        link3={`/profile/${id}`}
-      />
+      <NavbarMenu idParam={id} />
       <ProfileAvatar
         profileName={detailUser.name}
         photo={detailUser.photo}

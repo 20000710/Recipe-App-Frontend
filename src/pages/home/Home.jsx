@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import NavbarMenu from "../../components/navbar/navbarMenu";
 import MainImage from "../../assets/img/main-image.svg";
 import "./Style.css";
@@ -7,14 +7,9 @@ import PopularRecipe from "../../components/PopularRecipe";
 import NewRecipe from "../../components/NewRecipe";
 import Footer from "../../components/Footer/index";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import jwt_decode from "jwt-decode";
 
 const Home = () => {
   const navigate = useNavigate();
-  const token = localStorage.getItem("token");
-  const decode = jwt_decode(token);
-  const id = decode.id;
-
   const [search, setSearch] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const [sort, setSort] = useState("");
@@ -29,14 +24,7 @@ const Home = () => {
   return (
     <Fragment>
       <div className="container-home">
-        <NavbarMenu
-          menu1="Home"
-          menu2="Add Recipe"
-          menu3="Profile"
-          link1="/home"
-          link2="/add-recipe"
-          link3={`/profile/${id}`}
-        />
+        <NavbarMenu />
         <div className="row home">
           <div className="col-6">
             <h1 className="main-text">Discover Recipe & Delicious Food</h1>

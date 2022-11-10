@@ -156,7 +156,7 @@ Don't forget to give the project a star! Thanks again!
 ## Our Team
 
 <center>
-  <!-- <table>
+  <table>
     <tr>
       <th>Frontend/PM</th>
       <th>Frontend</th>
@@ -166,27 +166,27 @@ Don't forget to give the project a star! Thanks again!
     </tr>
     <tr>
       <td align="center">
+        <a href="https://github.com/20000710">
+          <img width="150" style="background-size: contain;" src="https://media-exp1.licdn.com/dms/image/C5603AQH78sDpJJSR8A/profile-displayphoto-shrink_800_800/0/1661774539079?e=1673481600&v=beta&t=HXs4pHuU7hoMenJdg-l6l19aMmeLFnrq4adIerDjVas" alt="Zaki Khairi Ziwar"><br/>
+          <b>Zaki Khairi Ziwar</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/mallyaagung">
+          <img width="150" src="https://media-exp1.licdn.com/dms/image/C5603AQHkGugHkpJxsw/profile-displayphoto-shrink_800_800/0/1661313327963?e=1673481600&v=beta&t=GYXQeXkD4QYGrAD_ufgX-04_UbaaqMhsSM8WDPGJfJY" alt="Muhamad Allya Agung Syafira"><br/>
+          <b>Muhamad Allya Agung Syafira</b>
+        </a>
+      </td>
+      <td align="center">
         <a href="https://github.com/rifqiay">
-          <img width="150" style="background-size: contain;" src="https://user-images.githubusercontent.com/110190301/196643765-76cc4a04-6323-465c-bfb6-5bdb54e72a44.jpg" alt="Rifqi Ainul Yaqin"><br/>
-          <b>Rifqi Ainul Yaqin</b>
+          <img width="150" src="https://media-exp1.licdn.com/dms/image/C5603AQFnvhoAoJ-SPg/profile-displayphoto-shrink_800_800/0/1667967046090?e=1673481600&v=beta&t=AKXwKhr6A2Iq7E3HCQYnvSCiBa0-SzhSygPx7qkn9HYg" alt="Muhammad Rifqi Ainul Yaqin"><br/>
+          <b>Muhammad Rifqi Ainul Yaqin</b>
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/rifqiahmadpratama">
-          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643825-5131ef0d-478d-4246-8e63-25276572768c.jpg" alt="Rifqi Ahmad Pratama"><br/>
-          <b>Rifqi Ahmad Pratama</b>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/bagus25dzikri06">
-          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643860-9204dde4-b6ff-4fe2-94ec-69069b1abfe7.jpg" alt="Bagus Dzikri Hidayat"><br/>
-          <b>Bagus Dzikri Hidayat</b>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/chlasswg26">
-          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643896-142e3693-9170-4aa3-953b-9f37bd435462.jpg" alt="Ichlas Wardy Gustama"><br/>
-          <b>Ichlas Wardy Gustama</b>
+        <a href="https://github.com/janexmgd">
+          <img width="150" src="" alt="Denny Wahyu Prasetyo"><br/>
+          <b>Denny Wahyu Prasetyo</b>
         </a>
       </td>
       <td align="center">
@@ -196,6 +196,6 @@ Don't forget to give the project a star! Thanks again!
         </a>
       </td>
     </tr>
-  </table> -->
+  </table>
 </center>
 <p align="right">(<a href="#top">back to top</a>)</p>
