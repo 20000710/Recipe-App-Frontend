@@ -1,70 +1,201 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- HEADER -->
+<div align="center">
+  <a href="https://github.com/rifqiay/Angkasa-Ticketing-Frontend">
+    <img src="./ScreenShoot/logo.png" alt="Logo" width="200px">
+  </a>
+  
+  <h3 align="center">Recipe-App-Frontend with React.js</h3>
+</div>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+       <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+       <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#related-project">Related Project</a></li>
+    <li><a href="#screenshoots">Screenshot</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#our-team">Our Team</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `yarn test`
+Angkasa Ticketing is an online ticket booking application. This application is intended for users who want to travel both nationally and internationally, using airplanes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Built With
 
-### `yarn build`
+This application was developed using a framework/library
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React Js](https://reactjs.org/)
+- [Javascript](https://www.javascript.com/)
+- [Axios](https://axios-http.com/)
+- [Redux](https://redux.js.org/)
+- [Bootstap](https://getbootstrap.com)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- GETTING STARTED -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `yarn eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure that Node JS is installed on the computer.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.Js](https://nodejs.org/en/download/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Get a free API Key at [https://github.com/20000710/Recipe-App-Backend.git](https://github.com/rifqiay/Angkasa-Ticketing-Backend)
+2. Clone this repo (Recipe-App-Frontend)
+   ```sh
+   git clone https://github.com/20000710/Recipe-App-Frontend.git
+   ```
+3. Go To Folder Repo
+   ```sh
+   cd Recipe-App-Frontend
+   ```
+4. Install NPM packages
+   ```sh
+   npm install
+   ```
+5. Enter your API in `.env`
+   ```js
+   REACT_API_BACKEND = "ENTER YOUR API";
+   ```
+6. Start website
+`sh npm start `
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Learn More
+<!-- Related Project -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Related Project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:rocket: [`Recipe-App-Backend`](https://github.com/20000710/Recipe-App-Backend.git)
 
-### Code Splitting
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Screenshoots -->
 
-### Analyzing the Bundle Size
+## Screenshoots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="center" display=flex>
+<table>
+  <tr>
+    <td><image src="./ScreenShoot/register page.png" alt="Register Page" width=100%></td>
+    <td><image src="./ScreenShoot/login page.png" alt="Login Page" width=100%/></td>
+  </tr>
+   <tr>
+    <td>Register</td>
+    <td>Login</td>
+  </tr>
+  
+  <tr>
+    <td><image src="./ScreenShoot/landing page.png" alt="Home Page" width=100% ></td>
+    <td><image src="./ScreenShoot/search page.png" alt="Search Flight from Home" width=100%/></td>
+  </tr>
+  <tr>
+    <td>Home</td>
+    <td>Search</td>
+  </tr>
+  <tr>
+    <td><image src="./ScreenShoot/add recipe page.png" alt="Search Flight" width=100%/></td>
+    <td><image src="./ScreenShoot/resep detail.png" alt="Flight detail" width=100%></td>
+  </tr>
+  <tr>
+     <td>Add Receipe</td>
+     <td>Receipe Detail</td>
+  </tr>
+  
+  <tr>
+    <td><image src="./ScreenShoot/video page.png" alt="My booking flight" width=100%></td>
+    <td><image src="./ScreenShoot/profile page.png" alt="Profile" width=100%></td>
+  </tr>
+  <tr>
+    <td>Video</td>
+    <td>Profile</td>
+  </tr>
+</table>
 
-### Making a Progressive Web App
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTRIBUTING -->
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Deployment
+1. Fork the Project
+2. Create your Feature Branch `git checkout -b feature/food-receipe`
+3. Commit your Changes `git commit -m 'Add some food-receipe-feature'`
+4. Push to the Branch `git push origin feature/food-receipe`
+5. Open a Pull Request
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Our Team
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<center>
+  <!-- <table>
+    <tr>
+      <th>Frontend/PM</th>
+      <th>Frontend</th>
+      <th>Frontend</th>
+      <th>Backend</th>
+      <th>Backend</th>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/rifqiay">
+          <img width="150" style="background-size: contain;" src="https://user-images.githubusercontent.com/110190301/196643765-76cc4a04-6323-465c-bfb6-5bdb54e72a44.jpg" alt="Rifqi Ainul Yaqin"><br/>
+          <b>Rifqi Ainul Yaqin</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/rifqiahmadpratama">
+          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643825-5131ef0d-478d-4246-8e63-25276572768c.jpg" alt="Rifqi Ahmad Pratama"><br/>
+          <b>Rifqi Ahmad Pratama</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/bagus25dzikri06">
+          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643860-9204dde4-b6ff-4fe2-94ec-69069b1abfe7.jpg" alt="Bagus Dzikri Hidayat"><br/>
+          <b>Bagus Dzikri Hidayat</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/chlasswg26">
+          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643896-142e3693-9170-4aa3-953b-9f37bd435462.jpg" alt="Ichlas Wardy Gustama"><br/>
+          <b>Ichlas Wardy Gustama</b>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Hnaa17">
+          <img width="150" src="https://user-images.githubusercontent.com/110190301/196643920-62360198-7d21-44c2-bbfa-45dddf983f55.jpg" alt="Farhana Achmad "><br/>
+          <b>Farhana Achmad </b>
+        </a>
+      </td>
+    </tr>
+  </table> -->
+</center>
+<p align="right">(<a href="#top">back to top</a>)</p>
