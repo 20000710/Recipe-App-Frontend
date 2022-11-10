@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./detailReceipe.css";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/index";
 import saved from "../../asset/img/saved.svg";
 import like from "../../asset/img/like.svg";
 import { Link, useParams } from "react-router-dom";
@@ -152,7 +152,14 @@ const DetailReceipe = () => {
   return (
     <Fragment>
       <div className="container">
-        <NavbarMenu menu1="Home" menu2="Add Recipe" menu3="Profile" />
+        <NavbarMenu
+          menu1="Home"
+          menu2="Add Recipe"
+          menu3="Profile"
+          link1="/home"
+          link2="/add-recipe"
+          link3={`/profile/${id}`}
+        />
         <section>
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 col-md-8">

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import NavbarMenu from "../../components/navbar/navbarMenu";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/index";
 import Pagination from "../../components/pagination/index.js";
 
 const SearchRecipe = () => {

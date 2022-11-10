@@ -5,11 +5,15 @@ import "./Style.css";
 import Popular from "../../components/Popular";
 import PopularRecipe from "../../components/PopularRecipe";
 import NewRecipe from "../../components/NewRecipe";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/index";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import jwt_decode from "jwt-decode";
 
 const Home = () => {
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  const decode = jwt_decode(token);
+  const id = decode.id;
 
   const [search, setSearch] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
@@ -31,7 +35,7 @@ const Home = () => {
           menu3="Profile"
           link1="/home"
           link2="/add-recipe"
-          link3="/profile"
+          link3={`/profile/${id}`}
         />
         <div className="row home">
           <div className="col-6">
