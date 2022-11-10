@@ -179,7 +179,7 @@ Don't forget to give the project a star! Thanks again!
       </td>
       <td align="center">
         <a href="https://github.com/rifqiay">
-          <img width="150" src="https://media-exp1.licdn.com/dms/image/C5603AQFnvhoAoJ-SPg/profile-displayphoto-shrink_800_800/0/1667967046090?e=1673481600&v=beta&t=AKXwKhr6A2Iq7E3HCQYnvSCiBa0-SzhSygPx7qkn9HYg" alt="Muhammad Rifqi Ainul Yaqin"><br/>
+          <img width="150" src="https://media-exp1.licdn.com/dms/image/C5603AQFnvhoAoJ-SPg/profile-displayphoto-shrink_800_800/0/1667967046090?e=1673481600&v=beta&t=AKXwKhr6A2Iq7E3HCQYnvSCiBa0-SzhSygPx7qkn9HY" alt="Muhammad Rifqi Ainul Yaqin"><br/>
           <b>Muhammad Rifqi Ainul Yaqin</b>
         </a>
       </td>
