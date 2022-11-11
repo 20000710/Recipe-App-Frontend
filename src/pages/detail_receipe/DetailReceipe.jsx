@@ -152,14 +152,7 @@ const DetailReceipe = () => {
   return (
     <Fragment>
       <div className="container">
-        <NavbarMenu
-          menu1="Home"
-          menu2="Add Recipe"
-          menu3="Profile"
-          link1="/home"
-          link2="/add-recipe"
-          link3={`/profile/${id}`}
-        />
+        <NavbarMenu />
         <section>
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 col-md-8">
