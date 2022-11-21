@@ -40,7 +40,7 @@
 
 ## About The Project
 
-Angkasa Ticketing is an online ticket booking application. This application is intended for users who want to travel both nationally and internationally, using airplanes.
+Recipe is an is a web-based application for displaying food recipes and add new recipes.
 
 ### Built With
 
