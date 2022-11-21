@@ -40,7 +40,7 @@
 
 ## About The Project
 
-Recipe is a web-based application for displaying food recipes and add new recipes.
+Recipe is a web-based application for displaying food recipes and also can gives some review and add new recipes.
 
 ### Built With
 
