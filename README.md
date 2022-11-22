@@ -65,24 +65,23 @@ Make sure that Node JS is installed on the computer.
 
 ### Installation
 
-1. Get a free API Key at [https://github.com/20000710/Recipe-App-Backend.git](https://github.com/rifqiay/Angkasa-Ticketing-Backend)
-2. Clone this repo (Recipe-App-Frontend)
+1. Clone this repo (Recipe-App-Frontend)
    ```sh
    git clone https://github.com/20000710/Recipe-App-Frontend.git
    ```
-3. Go To Folder Repo
+2. Go To Folder Repo
    ```sh
    cd Recipe-App-Frontend
    ```
-4. Install NPM packages
+3. Install NPM packages
    ```sh
    npm install
    ```
-5. Enter your API in `.env`
+4. Enter your API in `.env`
    ```js
    REACT_API_BACKEND = "ENTER YOUR API";
    ```
-6. Start website
+5. Start website
 `sh npm start `
 <p align="right">(<a href="#top">back to top</a>)</p>
 
